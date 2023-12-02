@@ -1,0 +1,43 @@
+/* Styles for the .col container */
+#heading-container {
+  text-align: center; /* Center align the content inside #heading-container */
+  background-color: #f0f0f0; /* Adding a background color for better visualization */
+  padding: 20px; /* Adding some padding around #heading-container to give it some space */
+}
+
+/* Styles for the h1 heading */
+#main-heading {
+  font-family: Arial, sans-serif; /* Use a commonly available font */
+  font-size: 36px; /* Adjust the font size as needed */
+  color: #333; /* Set the text color to a dark gray */
+  text-transform: uppercase; /* Uppercase the heading text */
+  margin: 0; /* Remove any default margin for the heading */
+  padding: 10px; /* Add padding to separate the heading from the edges of #heading-container */
+}
+.card {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    background-image: url();
+  	background-size: cover; /* Adjust the background-size property as needed */
+  	background-position: center; /* Adjust the background-position property as needed */ /* Each card occupies 100% of its column width */
+  }
+  
+  /* Styles for larger screens */
+  @media (min-width: 768px) {
+    .card {
+      max-width: 750px; /* Adjust the max-width as needed */
+    }
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 767px) {
+    .card {
+      max-width: 100%; /* Each card takes the full width of the screen on smaller devices */
+    }
+  }
+  

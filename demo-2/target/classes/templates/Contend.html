@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+    <link href="/assets/css/bootstrap/bootstap.min.css" rel="stylesheet">
+    <link href="/assets/css/Contend.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="col" id="heading-container">
+
+    <h1 id="main-heading">Diet Form</h1>
+  </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card" id="card">
+                <form>
+                    <div class="row mb-3">
+                        <label for="name" class="col-sm-4 col-form-label">Name<span style="color: red;" class="required">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="username" id="user_name" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <label for="Pincode" class="col-sm-4 col-form-label">Pincode<span style="color: red;" class="required">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" name="Pincode"  id="Pincode" required>
+                        </div>
+                    </div>
+        
+                    <div class="row mb-3">
+                        <label for="Address" class="col-sm-4 col-form-label">Address</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="Address" id="Address" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="country" class="col-sm-4 col-form-label">Country<span style="color: red;" class="required">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control"  name="country" id="country" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="Age" class="col-sm-4 col-form-label">Age</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" name="Age" id="Age" required>
+                        </div>
+                    </div>
+        
+                 
+
+                        <div class="row mb-3">
+                            <label class="col-sm-4">General Information</label>
+                        </div>
+                        <div class="row mb-3" style="max-height: 200px; overflow-y: auto;">
+                            <label class="col-sm-4">Education Major Expected Graduation</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" name="education" id="education" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-4">Marital Status</label>
+                            <div class="col-sm-8">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="maritalStatus" value="Single" required>Single
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="maritalStatus" value="Married" required>Married
+                                </label>
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="maritalStatus" value="Other" required>Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-4">How many people live in your household?</label>
+                            <div class="col-sm-8">
+                                <input type="number" class="form-control" name="household" id="household" required>
+                            </div>
+                        </div>
+              
+                        
+                        <div class="row mb-3">
+                            <label class="col-sm-4">Diabetes provider at home (Phone)</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" name="diabetesProviderPhone" id="diabetesProviderPhone" required>
+                                <small class="form-text text-muted">Please use this format: XXX-XXX-XXXX</small>
+                            </div>
+                        </div>
+                      </form>
+                    
+                
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="card" id="Diabetes">
+              <form>
+                  <div class="row mb-3">
+                    <label class="col-sm-4">diabetes type?</label>
+                    <div class="col-sm-8">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="diabetesType" value="Type 1" required>Type 1
+                        </label>
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="diabetesType" value="Type 2" required>Type 2
+                        </label>
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="diabetesType" value="Gestational" required>Gestational
+                        </label>
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="diabetesType" value="Unknown" required>Unknown
+                        </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-4">family members with diabetes</label>
+                    <div class="col-sm-8">
+                        <textarea class="form-control" name="familyDiabetes" id="familyDiabetes" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                      <label class="col-sm-12">Blood Glucose Information</label>
+                    </div>
+                
+                    <div class="row mb-3">
+                      <label class="col-sm-4">Select Blood Sugar Level:</label>
+                      <div class="col-sm-8">
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" name="bloodSugarLevel" id="lowBloodSugar" value="low">
+                          <label class="form-check-label" for="lowBloodSugar">Low (Below 70 mg/dL)</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" name="bloodSugarLevel" id="mediumBloodSugar" value="medium">
+                          <label class="form-check-label" for="mediumBloodSugar">Medium (70 mg/dL to 130 mg/dL)</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="radio" class="form-check-input" name="bloodSugarLevel" id="highBloodSugar" value="high">
+                          <label class="form-check-label" for="highBloodSugar">High (Above 130 mg/dL)</label>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <div class="row mb-3">
+                        <label class="col-sm-4">Do you have symptoms when your blood sugars go low?</label>
+                        <div class="col-sm-8">
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" name="lowBloodSugarSymptoms" id="lowBloodSugarYes" value="Yes">
+                            <label class="form-check-label" for="lowBloodSugarYes">Yes</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" name="lowBloodSugarSymptoms" id="lowBloodSugarNo" value="No">
+                            <label class="form-check-label" for="lowBloodSugarNo">No</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+                      <div class="row mb-3">
+                        <label class="col-sm-4">Have you ever been hospitalized for low blood sugars?</label>
+                        <div class="col-sm-8">
+                          <div class="form-check">
+                            <a href="../assets/Files/high.docx" id="lowSugarPDFLink" download></a>
+                            <a href="../assets/Files/Fruits.docx" id="highSugarPDFLink" download></a>
+                            <input type="radio" class="form-check-input" name="hospitalizedLowBloodSugar" id="hospitalizedYes" value="yes">
+                            <label class="form-check-label" for="hospitalizedYes">Yes</label>
+                          </div>
+                          <div class="form-check">
+                            <input type="radio" class="form-check-input" name="hospitalizedLowBloodSugar" id="hospitalizedNo" value="no">
+                            <label class="form-check-label" for="hospitalizedNo">No</label>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="row mb-3">
+                        <label class="col-sm-4">rate your understanding of diabetes?</label>
+                        <div class="col-sm-8">
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" id="diabetesUnder" name="diabetesUnderstanding" value="Good" required>Good
+                            </label>
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" id="diabetesUnder" name="diabetesUnderstanding" value="Fair" required>Fair
+                            </label>
+                            <label class="form-check-label">
+                                <input type="radio" class="form-check-input" id="diabetesUnder" name="diabetesUnderstanding" value="Poor" required>Poor
+                            </label>
+                        </div>
+                    </div>
+                  </form>
+                
+
+
+            </div>
+          </div>
+        </div>
+        
+   <div class="row">
+  <div class="col-sm-12 text-center">
+    <button type="button" onclick="validateAndSubmit()" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+        
+
+
+    
+                
+
+    
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/assets/page_js/bootstrap/popper.min.js"></script>
+<script src="/assets/page_js/bootstrap/bootsrap.min.js"></script>
+<script src="/assets/page_js/contend.js"></script>
+</html>
