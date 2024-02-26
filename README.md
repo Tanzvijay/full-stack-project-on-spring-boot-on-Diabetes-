@@ -1,1 +1,11 @@
-# web-page
+## Technologies Used
+
+## Balanced Sugar Diet Plan: Nourishing Options for Low and High Sugar Intake
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- jQuery
+- Spring Boot
+- REST API
+- MySQL
