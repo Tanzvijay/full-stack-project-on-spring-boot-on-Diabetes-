@@ -1,6 +1,8 @@
+## Balanced Sugar Diet Plan: Nourishing Options for Low and High Sugar Intake
+
 ## Technologies Used
 
-## Balanced Sugar Diet Plan: Nourishing Options for Low and High Sugar Intake
+
 - HTML
 - CSS
 - JavaScript
